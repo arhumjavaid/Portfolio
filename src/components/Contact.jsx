@@ -29,7 +29,7 @@ const Contact = () => {
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 1 }}
           className="my-4 border-b"
-          href="https://api.whatsapp.com/send?phone=923332482067&text=Hello%20message"
+          href="https://api.whatsapp.com/send?phone=923332482067&text=Hello"
           target="_blank"
         >
           +92 333 2482067
