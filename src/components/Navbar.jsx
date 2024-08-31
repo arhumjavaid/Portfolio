@@ -14,8 +14,8 @@ const Navbar = () => {
           <h1 className="text-4xl font-bold text-[#6161a9]">j</h1>
         </div>
         <div className="m-8 flex justify-center items-center gap-4 text-2xl cursor-pointer">
-          <FaLinkedin />
-          <FaGithub />
+          <a href="http://www.linkedin.com/in/arhum-javaid-8b1807285" target="_blank"><FaLinkedin /></a>
+          <a href="https://github.com/arhumjavaid" target="_blank"><FaGithub /></a>
           <FaInstagram />
           <FaFacebookF />
         </div>
