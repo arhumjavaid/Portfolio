@@ -62,7 +62,7 @@ const Hero = () => {
               variants={container(0.75)}
               initial="hidden"
               animate="visible"
-              className="text-4xl mt-3 font-extralight flex items-center flex-wrap"
+              className="text-4xl mt-3 font-extralight flex items-center flex-wrap justify-center"
             >
               I PROVIDE
               <span
