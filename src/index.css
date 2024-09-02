@@ -11,3 +11,13 @@
 body::-webkit-scrollbar {
     display: none;
 }
+
+@layer components {
+    .underline-effect {
+      @apply relative  p-0;
+    }
+
+    .underline-effect::after {
+        @apply content-[''] absolute w-full h-[2px] left-0 bottom-[-5px] bg-zinc-300 origin-bottom-right hover:origin-bottom-left scale-x-0 hover:scale-x-100 transition-transform duration-300;
+      }
+}
