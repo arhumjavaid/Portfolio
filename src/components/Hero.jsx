@@ -62,7 +62,7 @@ const Hero = () => {
               variants={container(0.75)}
               initial="hidden"
               animate="visible"
-              className="text-4xl mt-3 font-extralight"
+              className="text-4xl mt-3 font-extralight flex items-center "
             >
               I PROVIDE
               <span
@@ -87,9 +87,12 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-full lg:w-[40%] lg:p-12 ">
-          <motion.div initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 1.1 }} className="flex items-center justify-center bg-[#14141B] rounded-full">
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 1.1 }}
+            className="flex items-center justify-center bg-[#14141B] rounded-full"
+          >
             <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
