@@ -58,7 +58,7 @@ const Navbar = () => {
           {["Home", "About", "Portfolio", "Contact"].map((item, index) => (
             <a
               key={index}
-              className="text-2xl font-light capitalize cursor-pointer hover:text-[#6161a9] transition-transform duration-300 "
+              className="text-2xl font-light capitalize cursor-pointer hover:text-[#6161a9] transition-transform duration-500 "
               onClick={() => setShowNav(false)}
             >
               {item}
