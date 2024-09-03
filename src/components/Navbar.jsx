@@ -50,7 +50,7 @@ const Navbar = () => {
       </nav>
 
       {showNav && (
-        <div className="fixed inset-0 w-[68%] bg-[#1A1A25] text-white z-50 p-8 flex flex-col gap-8">
+        <div className="fixed inset-0 w-[68%] bg-[#181822] text-white z-50 p-8 flex flex-col gap-8">
           <div className="flex flex-shrink-0 items-center gap-[2px] cursor-pointer mb-5">
             <h1 className="text-4xl font-bold">A</h1>
             <h1 className="text-4xl font-bold text-[#6161a9]">j</h1>
