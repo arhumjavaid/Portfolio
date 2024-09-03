@@ -8,7 +8,7 @@ import { IoMdClose } from "react-icons/io";
 // import { FaFacebookF } from "react-icons/fa";
 
 const Navbar = () => {
-  const [showNav, setShowNav] = useState(true);
+  const [showNav, setShowNav] = useState(false);
   return (
     <>
       <nav className="flex justify-between items-center py-8 mb-20 ">
