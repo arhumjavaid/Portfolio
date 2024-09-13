@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { IoMdClose } from "react-icons/io";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 // import { FaLinkedin } from "react-icons/fa";
 // import { FaGithub } from "react-icons/fa";
 // import { FaInstagram } from "react-icons/fa";
@@ -10,8 +10,9 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
-  const navigate = useNavigate()
-  const routes = ["/","/about","/Projects","/Contact",]
+  const navigate = useNavigate();
+  const location = useLocation();
+  const routes = ["/", "/about", "/Projects", "/Contact"];
   return (
     <>
       <nav className="flex justify-between items-center py-8 mb-20 ">
@@ -25,7 +26,11 @@ const Navbar = () => {
               <button
                 key={index}
                 onClick={() => navigate(routes[index])}
-                className={`underline-effect text-[1.125rem] font-[400] capitalize cursor-pointer transform hover:translate-y-[-10%] transition-transform duration-500 ${location.pathname === routes[index] ? "border-b-2 border-zinc-300 " : ""}`}
+                className={`underline-effect text-[1.125rem] font-[400] capitalize cursor-pointer transform hover:translate-y-[-10%] transition-transform duration-500 ${
+                  location.pathname === routes[index]
+                    ? "border-b-2 border-zinc-300 "
+                    : ""
+                }`}
               >
                 <div className="overflow-hidden block ">
                   <div className="block max-md:hidden text-2xl ">{item}</div>
@@ -64,10 +69,15 @@ const Navbar = () => {
         {["Home", "About", "Portfolio", "Contact"].map((item, index) => (
           <button
             key={index}
-            className={`text-2xl font-light capitalize cursor-pointer ${location.pathname === routes[index] ? "border-b-2 border-zinc-300 " : ""}`}
-            onClick={() => {setShowNav(false)
-            navigate(routes[index])}
-            }
+            className={`text-2xl font-light capitalize cursor-pointer ${
+              location.pathname === routes[index]
+                ? "border-b-2 border-zinc-300 "
+                : ""
+            }`}
+            onClick={() => {
+              setShowNav(false);
+              navigate(routes[index]);
+            }}
           >
             {item}
           </button>
