@@ -28,7 +28,7 @@ const Navbar = () => {
                 onClick={() => navigate(routes[index])}
                 className={`underline-effect text-[1.125rem] font-[400] capitalize cursor-pointer transform hover:translate-y-[-10%] transition-transform duration-500 ${
                   location.pathname === routes[index]
-                    ? "border-b-2 border-zinc-300 "
+                    ? "border-b-4 border-[#565697] "
                     : ""
                 }`}
               >
@@ -71,7 +71,7 @@ const Navbar = () => {
             key={index}
             className={`text-2xl font-light capitalize cursor-pointer ${
               location.pathname === routes[index]
-                ? "border-b-2 border-zinc-300 w-fit"
+                ? "underline underline-offset-8 decoration-4 decoration-[#6161a9]"
                 : ""
             }`}
             onClick={() => {
