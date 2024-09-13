@@ -71,7 +71,7 @@ const Navbar = () => {
             key={index}
             className={`text-2xl font-light capitalize cursor-pointer ${
               location.pathname === routes[index]
-                ? "border-b-2 border-zinc-300 "
+                ? "border-b-2 border-zinc-300 w-fit"
                 : ""
             }`}
             onClick={() => {
