@@ -6,6 +6,7 @@ import image3 from "../assets/ochi.png";
 import image4 from "../assets/blackjack.png";
 import image5 from "../assets/netflix.png";
 import { motion } from "framer-motion";
+import Navbar from "./Navbar";
 
 const Projects = () => {
   const projects = [
@@ -51,6 +52,8 @@ const Projects = () => {
     },
   ];
   return (
+    <>
+    <Navbar/>
     <div className="border-b border-neutral-900 pb-4">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
@@ -102,6 +105,7 @@ const Projects = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

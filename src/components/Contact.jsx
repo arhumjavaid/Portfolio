@@ -2,9 +2,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaLocationDot } from "react-icons/fa6";
+import Navbar from "./Navbar";
 
 const Contact = () => {
   return (
+    <>
+    <Navbar />
     <div className="border-b border-neutral-900 pb-20">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
@@ -43,6 +46,7 @@ const Contact = () => {
         </a>
       </div>
     </div>
+    </>
   );
 };
 

@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { motion } from "framer-motion";
 import image from "../assets/person.png";
+import Navbar from "./Navbar";
 
 const Hero = () => {
   const container = (delay) => ({
@@ -38,6 +39,8 @@ const Hero = () => {
     };
   }, []);
   return (
+    <>
+    <Navbar/>
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
@@ -104,6 +107,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

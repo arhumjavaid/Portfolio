@@ -2,9 +2,13 @@
 import React from "react";
 import image from "../assets/about.jpg";
 import { motion } from "framer-motion";
+import Technologies from "./Technologies";
+import Navbar from "./Navbar";
 
 const About = () => {
   return (
+    <>
+    <Navbar/>
     <div className="border-b border-neutral-900 pb-4">
       <h1 className="my-20 text-center text-4xl">
         ABOUT <span className="text-neutral-500"> ME</span>
@@ -45,6 +49,8 @@ const About = () => {
         </motion.div>
       </div>
     </div>
+    <Technologies/>
+    </>
   );
 };
 
