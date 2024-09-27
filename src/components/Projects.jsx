@@ -16,7 +16,7 @@ const Projects = () => {
       description:
         "This personal portfolio, built with React and Tailwind CSS, highlights my front-end skills with a modern, responsive design that adapts to all devices.",
       technologies: ["HTML", "CSS", "React", "Tailwind CSS"],
-      src: "https://github.com/arhumj/Portfolio",
+      src: "https://portfolio-ecru-eta-47.vercel.app/",
     },
     {
       title: "Bubble Game",
